@@ -14,3 +14,174 @@ a{
     text-decoration: none;
 }
 img {width: 100%;}
+
+.nav-container {
+    background: #1D4D83;
+
+    a {
+        color: white;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo{
+        color:#E30325;
+        font-weight: bold;
+    }
+        ul{
+            display: flex;
+            a{
+                display: block;
+                padding: 0 1em;
+            }
+        }
+}
+.social-header, .hero-design{
+    display: none;
+}
+.hero{
+    background: #255C99;
+    color: #262626;
+    display: grid;
+    text-align: center;
+    padding: 4em; 
+}
+.meet {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    font-weight: bold;
+    color: #CCAD8F;
+
+    span{
+        margin-top: 1em;
+        margin-right: .5em;
+    }
+
+}
+.scroll{
+    width: 30px;
+    margin-top: 2em;
+}
+
+section{
+    padding: 4em 2em;
+    text-align: center;
+
+}
+
+@media only screen and(max-width: 504px){
+    .nav-container{
+       font-size: 15px
+    }
+}
+
+@media only screen and(min-width: 1050px){
+    
+    .hero{
+        height: 90vh;
+    }
+    .nav-container{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header{
+            background: #1D4D83;
+        }
+    }
+    header{
+        padding: 2em 2em 2em 4em;
+    }
+    .social-header{
+        padding: 2em 4em 2em 0;
+    }
+    section{
+        padding:4em;
+    }
+
+    .social-header{
+        display: block;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 7em;
+            float: right;
+
+            img{
+                width: 30px;
+            }
+        }
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+        .content{
+            background: #255C99;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+
+            h1{
+                font-size: 3em;
+                line-height: 1.2em;
+            }
+        }
+    }
+    .meet{
+        margin:unset
+    }
+    .hero-design{
+        display: unset;
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1250px){
+    header{
+        padding:2em 2em 2em 10em;
+    }
+    .social-header{
+        padding: 2em 10em 2em 0;
+    }
+    section{
+        padding: 10em 10em 4em 10em;
+    }
+    .hero .content{
+        padding: 6em 8em 6em 10em;
+        h1{
+            width: 350px;
+        }
+       
+    }
+}
+
+@media only screen and (min-width:1550px){
+
+    header{
+       padding: 2em 2em 2em 20em; 
+    }
+    .social-header {
+        padding:2em 20em 2em 0;
+    }
+    section{
+        padding: 6em 20em 4em 20em
+    }
+    .hero .content{
+        padding: 9em 20em 6em 20em;
+        h1{
+            font-size: 55px;
+            width: 400px;
+        }
+
+    }
+}
