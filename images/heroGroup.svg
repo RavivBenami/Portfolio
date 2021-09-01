@@ -1,0 +1,33 @@
+<svg width="640" height="629" viewBox="0 0 640 629">
+  <g id="Group_1" data-name="Group 1" transform="translate(-1028 -198)">
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(1348 198)" fill="#255c99" stroke="#707070" stroke-width="1">
+      <rect width="160" height="160" rx="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="159" height="159" rx="29.5" fill="none"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(1508 358)" fill="#255c99" stroke="#707070" stroke-width="1" opacity="0.704">
+      <rect width="160" height="160" rx="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="159" height="159" rx="29.5" fill="none"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(1348 507)" fill="#255c99" stroke="#707070" stroke-width="1">
+      <rect width="160" height="160" rx="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="159" height="159" rx="29.5" fill="none"/>
+    </g>
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(1188 667)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="160" height="160" rx="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="159" height="159" rx="29.5" fill="none"/>
+    </g>
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(1028 507)" fill="#4a78aa" stroke="#707070" stroke-width="1">
+      <rect width="160" height="160" rx="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="159" height="159" rx="29.5" fill="none"/>
+    </g>
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(1188 358)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="160" height="160" rx="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="159" height="159" rx="29.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="75" cy="75" r="75" transform="translate(1193 518)" fill="#ccad8f"/>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1353 357)" fill="#b3001b" stroke="#707070" stroke-width="1">
+      <circle cx="75" cy="75" r="75" stroke="none"/>
+      <circle cx="75" cy="75" r="74.5" fill="none"/>
+    </g>
+  </g>
+</svg>
