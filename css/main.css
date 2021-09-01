@@ -38,7 +38,7 @@ header {
 }
 
 header .logo {
-  color: #E30325;
+  color: #CCAD8F;
   font-weight: bold;
 }
 
@@ -73,7 +73,7 @@ header ul a {
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
-  color: #CCAD8F;
+  color: #E30325;
 }
 
 .meet span {
@@ -93,7 +93,7 @@ section {
 
 @media only screen and (max-width: 504px) {
   .nav-container {
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 
@@ -198,6 +198,34 @@ section {
   .hero .content h1 {
     font-size: 55px;
     width: 400px;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(272px, 717px);
+            transform: translate(272px, 717px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(272px, 760px);
+            transform: translate(272px, 760px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(272px, 717px);
+            transform: translate(272px, 717px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(272px, 760px);
+            transform: translate(272px, 760px);
   }
 }
 /*# sourceMappingURL=main.css.map */

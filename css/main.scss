@@ -29,7 +29,7 @@ header{
     padding: 2em;
 
     .logo{
-        color:#E30325;
+        color:#CCAD8F;
         font-weight: bold;
     }
         ul{
@@ -50,12 +50,13 @@ header{
     text-align: center;
     padding: 4em; 
 }
+
 .meet {
     display: flex;
     margin: 0 auto;
     width: 200px;
     font-weight: bold;
-    color: #CCAD8F;
+    color: #E30325;
 
     span{
         margin-top: 1em;
@@ -76,7 +77,7 @@ section{
 
 @media only screen and(max-width: 504px){
     .nav-container{
-       font-size: 15px
+       font-size: 11px
     }
 }
 
@@ -184,4 +185,20 @@ section{
         }
 
     }
+}
+
+.circle{
+    animation: circleAnim 1s infinite alternate-reverse; 
+}
+
+@keyframes circleAnim{
+
+    from{
+        transform: translate(272px,717px);
+        z-index: 5;
+    }
+    to{
+        transform: translate(272px,760px);
+    }
+
 }
