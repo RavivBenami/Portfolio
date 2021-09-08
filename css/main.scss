@@ -23,6 +23,47 @@ img {width: 100%;}
     }
 }
 
+.section{
+    padding: 1rem 0 4rem;    
+}
+.section__title{
+    font-size: 2.25rem;
+    margin-bottom: .3rem;
+}
+.section__subtitle{
+    display: block;
+    color:#686868;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+}
+.section__title,.section__subtitle{
+    text-align: center;
+}
+.skills{
+    position: relative;
+}
+.skills::before{
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: #83b0e4;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container{
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.grid{
+    display: grid;
+    gap:1.5rem
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -69,11 +110,6 @@ header{
     margin-top: 2em;
 }
 
-section{
-    padding: 4em 2em;
-    text-align: center;
-
-}
 
 @media only screen and(max-width: 504px){
     .nav-container{
@@ -100,9 +136,6 @@ section{
     }
     .social-header{
         padding: 2em 4em 2em 0;
-    }
-    section{
-        padding:4em;
     }
 
     .social-header{
@@ -144,6 +177,15 @@ section{
         margin-top: 15%;
         width: 100%;
     }
+    section{
+        padding: 4rem;
+    }
+    .skills{
+        padding: 2rem;
+    }
+    .container{
+        padding-left: 4rem;
+    }
 
 }
 
@@ -162,7 +204,9 @@ section{
         h1{
             width: 350px;
         }
-       
+    }
+    .container{
+        padding-left: 6rem;
     }
 }
 
@@ -183,7 +227,9 @@ section{
             font-size: 55px;
             width: 400px;
         }
-
+    }
+    .container{
+        padding-left: 20rem;
     }
 }
 
@@ -201,4 +247,152 @@ section{
         transform: translate(272px,760px);
     }
 
+}
+
+/* skills*/
+
+.skills__container{
+    row-gap: 0;
+    text-align: left;
+}
+.skills__header{
+   display: flex;
+   align-items: center;
+   margin-bottom: 2.5rem;
+   cursor: pointer; 
+}
+.skills__icon, .skills__arrow{
+    font-size: 2rem;
+    color:#255C99; 
+}
+.skills__icon{
+    margin-right: .75rem;
+}
+.skills__title{
+    font-size: 1.125rem;
+}
+.skills_subtitle{
+    font-size: .813rem;
+    color:lightgray;
+}
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+.skills__list{
+    row-gap:1.5rem;
+    padding-left: 2.7rem;
+}
+.skills__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem
+}
+.skills__name{
+    font-size: .938rem;
+    font-weight: 500;
+}
+.skills__bar, .skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+.skills__bar{
+    background-color: #83b0e4;
+}
+.skills__percentage{
+    display: block;
+    background-color: #1D4D83;
+}
+.skills__html{
+    width: 80%;
+}
+.skills__css{
+    width: 60%;
+}
+.skills__js{
+    width: 70%;
+}
+.skills__react{
+    width: 75%;
+}
+.skills__nodeJS{
+    width: 50%;
+}
+.skills__express{
+    width: 60%;
+}
+.skills__mongoDB{
+    width: 60%;
+}
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+}
+
+/* Contact*/
+.contact__container{
+    row-gap: 1rem;
+}
+.contact__information{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.contact__icon{
+    font-size: 2rem;
+    color:#255C99;
+    margin-right: .5rem;
+    margin-top: .5rem;
+}
+.contact__title{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.contact__subtitle{
+    font-size: 1rem;
+    color: #686868;
+}
+.contact__content{
+    background-color: #b5d7ff;
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+.contact__input{
+    width: 100%;
+    background-color: #b5d7ff;
+    font-size: 1rem;
+    border:none;
+    outline:none;
+    padding:.25rem .5rem .5rem 0; 
+    color:#262626
+}
+.contact__label{
+    font-size: 1rem;
+    color:#262626
+}
+.button {
+    display: inline-block;
+    background-color:#255C99;
+    color:white;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: 500;
+}
+.button:hover{
+    background-color: #1D4D83;
+}
+.button__icon{
+    font-size:1.25rem;
+    margin-left: 0.5rem;
+    transition: .3;
+}
+.button--flex{
+    display: inline-block;
+    align-items: center;
 }
