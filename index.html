@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("user_HsUj2a1CASspUZk9kXFB4");
+       })();
+    </script>
+    <script src="contact.js"></script>
   </head>
   <body>
     <div class="nav-container">
@@ -185,6 +192,7 @@
         </div>
       </div>
     </section>
+    <!-- contact me  -->
     <section class="contact section" id="contact">
       <h2 class="section__title">Contact me</h2>
       <span class="section__subtitle">Get in touch</span>
@@ -204,29 +212,34 @@
             <span class="contact__subtitle">Ravivofficial@gmail.com</span>
           </div>
         </div>
+        <div class="contact__information">
+          <i class="uil uil-location-point contact__icon"></i>
+          <div>
+            <h3 class="contact_title">Location</h3>
+            <span class="contact__subtitle">Hadera, Israel</span>
+          </div>
+        </div>
 
-        <div action='' class= "contact__form grid">
-          <div class="contact__inputs grid">
+        <div class= "grid">
             <div class="contact__content">
             <label for="" class="contact__label">Name</label>
-            <input type="text" class="contact__input">
-          </div>
+            <input type="text" id="from_name" class="contact__input">
           </div>
           <div class="contact__content">
             <label for="" class="contact__label">Email</label>
-            <input type="email" class="contact__input">
+            <input type="email" id="email" class="contact__input" autocomplete="off" >
           </div>
           <div class="contact__content">
             <label for="" class="contact__label">Message</label>
-            <textarea name='' id='' cols=0 rows='7' type="text" class="contact__input"></textarea>
+            <textarea id='contact_message' cols=0 rows='7' type="text" class="contact__input"></textarea>
           </div>
-        </div>
           <div>
-            <a href="#" class="button button--flex">
+            <a class="button button--flex" onclick="sendEmail()">
               Send Message
               <i class="uil uil-message button__icon"></i>
             </a>
           </div>
+        </div>
         </form>
         
       </div>
