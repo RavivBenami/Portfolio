@@ -5,6 +5,9 @@ body{
     margin: 0;
     font-family: 'Poppins','arial';
 }
+textarea{
+    resize: none;
+}
 ul{
     list-style-type: none;
     margin: 0;
@@ -24,7 +27,7 @@ img {width: 100%;}
 }
 
 .section{
-    padding: 1rem 0 4rem;    
+    padding: 0rem 0 2rem;    
 }
 .section__title{
     font-size: 2.25rem;
@@ -121,7 +124,15 @@ header{
 }
 
 @media only screen and(min-width: 1050px){
-    
+
+    .grid__contact__info{
+        display: grid;
+    }
+    .grid__contact{
+        display: grid;
+        grid-auto-rows: 1px;
+        min-height: 50vh;
+    }
     .hero{
         height: 90vh;
     }
@@ -216,6 +227,12 @@ header{
     .container{
         padding-left: 6rem;
     }
+    .grid__contact{
+        display: grid;
+        grid-auto-rows: 1px;
+        min-height: 70vh;
+    }
+  
 }
 
 @media only screen and (min-width:1550px){
@@ -238,6 +255,11 @@ header{
     }
     .container{
         padding-left: 20rem;
+    }
+    .grid__contact{
+        display: grid;
+        grid-auto-rows: 1px;
+        min-height: 50vh;
     }
 }
 
@@ -346,7 +368,7 @@ header{
 
 /* Contact*/
 .contact__container{
-    row-gap: 1rem;
+    row-gap: 1;    
 }
 .contact__information{
     display: flex;
@@ -405,4 +427,40 @@ header{
 .button--flex{
     display: inline-block;
     align-items: center;
+    margin-bottom: 10px;
 }
+.footer{
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    background-color:#1D4D83;
+    color: white;
+    
+    img{
+        width: 30px;
+    }
+}
+.footer__header{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.footer__subHeader{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.footer__link{
+    color:white
+}
+.footer__link:hover{
+    color:black;
+}
+.footer__copy{
+    color: gray;
+    font-size: x-small;
+}
+
