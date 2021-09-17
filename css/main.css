@@ -157,7 +157,7 @@ header ul a {
     display: -ms-grid;
     display: grid;
     grid-auto-rows: 1px;
-    min-height: 50vh;
+    min-height: 35rem;
   }
   .hero {
     height: 90vh;
@@ -258,7 +258,7 @@ header ul a {
     display: -ms-grid;
     display: grid;
     grid-auto-rows: 1px;
-    min-height: 70vh;
+    min-height: 35rem;
   }
 }
 
@@ -286,7 +286,11 @@ header ul a {
     display: -ms-grid;
     display: grid;
     grid-auto-rows: 1px;
-    min-height: 50vh;
+    min-height: 35rem;
+  }
+  .footer__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -519,7 +523,7 @@ header ul a {
 
 .footer {
   padding: 2rem 2rem;
-  margin-top: 2rem;
+  margin-top: 0.9rem;
   background-color: #1D4D83;
   color: white;
 }
@@ -530,27 +534,28 @@ header ul a {
 
 .footer__header {
   font-size: 2rem;
-  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .footer__subHeader {
-  font-size: 1rem;
-  margin-bottom: 2rem;
+  font-size: 15px;
+  padding: 0;
 }
 
 .footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 0.5rem;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  row-gap: 1rem;
   margin-bottom: 1rem;
 }
 
 .footer__link {
+  margin-right: 10px;
   color: white;
 }
 
@@ -561,5 +566,7 @@ header ul a {
 .footer__copy {
   color: gray;
   font-size: x-small;
+  text-align: center;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

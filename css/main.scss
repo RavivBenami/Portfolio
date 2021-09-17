@@ -131,7 +131,7 @@ header{
     .grid__contact{
         display: grid;
         grid-auto-rows: 1px;
-        min-height: 50vh;
+        min-height: 35rem;
     }
     .hero{
         height: 90vh;
@@ -230,7 +230,7 @@ header{
     .grid__contact{
         display: grid;
         grid-auto-rows: 1px;
-        min-height: 70vh;
+        min-height: 35rem;
     }
   
 }
@@ -259,7 +259,10 @@ header{
     .grid__contact{
         display: grid;
         grid-auto-rows: 1px;
-        min-height: 50vh;
+        min-height: 35rem;
+    }
+    .footer__container{
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
@@ -431,7 +434,7 @@ header{
 }
 .footer{
     padding: 2rem 2rem;
-    margin-top: 2rem;
+    margin-top: 0.9rem;
     background-color:#1D4D83;
     color: white;
     
@@ -441,19 +444,20 @@ header{
 }
 .footer__header{
     font-size: 2rem;
-    margin-bottom: 0;
+    margin-top: 0;
 }
 .footer__subHeader{
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 15px;
+    padding: 0;
 }
 .footer__links{
     display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
+    flex-direction: row;
+    row-gap: 1rem;
     margin-bottom: 1rem;
 }
 .footer__link{
+    margin-right:10px;
     color:white
 }
 .footer__link:hover{
@@ -462,5 +466,7 @@ header{
 .footer__copy{
     color: gray;
     font-size: x-small;
+    text-align: center;
+    margin-top: 1rem;
 }
 
